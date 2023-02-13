@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>few</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/asset/css/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kanit">
+</head>
+
+<body class="antialiased bg-gradient-to-r from-pink-300 via-purple-300 to-indigo-400">
+    <header>
+        <nav
+            class="flex flex-wrap items-center justify-between w-full py-4 md:py-0 px-4 text-lg text-gray-700 bg-black">
+            <div>
+                <a href="#">
+                    <img alt="42"
+                        src="https://profile.intra.42.fr/assets/42_logo-7dfc9110a5319a308863b96bda33cea995046d1731cebb735e41b16255106c12.svg"
+                        style="height: 50px; width: 50px" />
+                </a>
+            </div>
+            <svg xmlns="<http://www.w3.org/2000/svg>" id="menu-button" class="h-6 w-6 cursor-pointer md:hidden block"
+                fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+            <div class="hidden w-full md:flex md:items-center md:w-auto" id="menu">
+                <ul class="text-base text-gray-700 pt-4 md:flex md:justify-between md:pt-0">
+                    <li>
+                        <a class="md:p-4 py-2 block text-white hover:text-purple-400" href="#">Home</a>
+                    </li>
+                    <li>
+                        <a class="md:p-4 py-2 block text-white hover:text-purple-400" href="#">Team Member</a>
+                    </li>
+                    <li>
+                        <a class="md:p-4 py-2 block text-white hover:text-purple-400" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <style>
+        [x-cloak=""] {
+            display: none;
+        }
+    </style>
+    <script src="https://unpkg.com/tailwindcss-jit-cdn"></script>
+    <section class="flex flex-col justify-center text-gray-600 min-h-screen">
+        <div class="h-full">
+            <!-- Card -->
+            <div class="max-w-sm mx-auto bg-white shadow-lg rounded-sm border border-gray-200">
+                <div class="flex flex-col h-full">
+                    <!-- Card top -->
+                    <div class="flex-grow p-5">
+                        <div class="flex justify-between items-start">
+                            <!-- Image + name -->
+                            <header>
+                                <div class="flex mb-2">
+                                    <a class="relative inline-flex items-start mr-5" href="#0">
+                                        <div class="absolute top-0 right-0 -mr-2 bg-white rounded-full shadow"
+                                            aria-hidden="true">
+                                            <svg class="w-8 h-8 fill-current text-yellow-500" viewBox="0 0 32 32">
+                                                <path
+                                                    d="M21 14.077a.75.75 0 01-.75-.75 1.5 1.5 0 00-1.5-1.5.75.75 0 110-1.5 1.5 1.5 0 001.5-1.5.75.75 0 111.5 0 1.5 1.5 0 001.5 1.5.75.75 0 010 1.5 1.5 1.5 0 00-1.5 1.5.75.75 0 01-.75.75zM14 24.077a1 1 0 01-1-1 4 4 0 00-4-4 1 1 0 110-2 4 4 0 004-4 1 1 0 012 0 4 4 0 004 4 1 1 0 010 2 4 4 0 00-4 4 1 1 0 01-1 1z" />
+                                            </svg>
+                                        </div>
+                                        <img class="rounded-full" src="/asset/image/few.jpg" width="64" height="64"
+                                            alt="User 01" />
+                                    </a>
+                                    <div class="mt-1 pr-1">
+                                        <a class="inline-flex text-gray-800 hover:text-gray-900" href="#0">
+                                            <h2 class="text-xl leading-snug justify-center font-semibold">Peeranat
+                                                Matsor</h2>
+                                        </a>
+                                        <div class="flex items-center"><span
+                                                class="text-sm font-medium text-gray-400 -mt-0.5 mr-1">-&gt;</span>
+                                            <code>IT20 @KMITL</code>
+                                        </div>
+                                    </div>
+                                </div>
+                            </header>
+                            <!-- Menu button -->
+                            <div class="relative inline-flex flex-shrink-0" x-data="{ open: false }">
+                                <button
+                                    class="text-gray-400 hover:text-gray-500 rounded-full focus:outline-none focus-within:ring-2"
+                                    :class="{ 'bg-gray-100 text-gray-500': open }" aria-haspopup="true"
+                                    @click.prevent="open = !open" :aria-expanded="open">
+                                    <span class="sr-only">Menu</span>
+                                    <svg class="w-8 h-8 fill-current" viewBox="0 0 32 32">
+                                        <circle cx="16" cy="16" r="2" />
+                                        <circle cx="10" cy="16" r="2" />
+                                        <circle cx="22" cy="16" r="2" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <!-- Bio -->
+                        <div class="mt-2">
+                            <div class="text-sm pb-2">Hello world! My name is Few nice to meet you alls!</div>
+                            <div class="text-sm pb-3"><b>Education:</b> Currently studying at King Mongkut's Institute
+                                of Technology
+                                Ladkrabang (KMITL) majoring in Information Technology or a related field. </div>
+                            <div class="text-sm pb-3"><b>Skills:</b> Proficient in multiple programming languages such
+                                as Python,
+                                Java, and C++. Skilled in problem-solving and developing software applications.</div>
+                        </div>
+                        <hr>
+                        <div class="pt-2 mb-1 text-base font-medium dark:text-black">Java</div>
+                        <div class="w-full bg-gray-200 rounded-full h-1.5 mb-4 dark:bg-gray-700">
+                            <div class="bg-blue-600 h-1.5 rounded-full dark:bg-blue-500" style="width: 80%"></div>
+                        </div>
+                        <div class="mb-1 text-base font-medium dark:text-black">Python</div>
+                        <div class="w-full bg-gray-200 rounded-full h-1.5 mb-4 dark:bg-gray-700">
+                            <div class="bg-blue-600 h-1.5 rounded-full dark:bg-blue-500" style="width: 50%"></div>
+                        </div>
+                        <div class="mb-1 text-base font-medium dark:text-black">MySQL</div>
+                        <div class="w-full bg-gray-200 rounded-full h-1.5 mb-4 dark:bg-gray-700">
+                            <div class="bg-blue-600 h-1.5 rounded-full dark:bg-blue-500" style="width: 50%"></div>
+                        </div>
+                        <div class="mb-1 text-base font-medium dark:text-black">JavaScript</div>
+                        <div class="w-full bg-gray-200 rounded-full h-1.5 mb-4 dark:bg-gray-700">
+                            <div class="bg-blue-600 h-1.5 rounded-full dark:bg-blue-500" style="width: 20%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
